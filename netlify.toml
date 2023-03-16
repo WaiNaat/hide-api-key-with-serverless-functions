@@ -16,3 +16,5 @@ force = true
 [[redirects]]
 from = "/3/*"
 to = "/.netlify/functions/tmdb/:splat"
+status = 200
+force = true
