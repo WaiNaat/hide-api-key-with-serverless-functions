@@ -23,6 +23,10 @@ exports.handler = async (event) => {
 
   url.search = parameters;
 
+  console.log(url)
+  console.log(path)
+  console.log(TMDB_ORIGIN)
+
   try {
     const response = await fetch(url, { headers: { referer } });
     const body = await response.json();
