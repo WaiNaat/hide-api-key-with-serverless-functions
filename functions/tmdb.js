@@ -2,7 +2,7 @@ const fetch = require("node-fetch");
 const querystring = require("querystring");
 const stringify = require("../utils/stringify.js");
 
-const TMDB_ORIGIN = "https://api.themoviedb.org/3/movie/popular";
+const TMDB_ORIGIN = "https://api.themoviedb.org";
 const headers = {
   "Access-Control-Allow-Origin": process.env.HOST,
   "Content-Type": "application/json; charset=utf-8",
@@ -22,10 +22,6 @@ exports.handler = async (event) => {
   });
 
   url.search = parameters;
-
-  console.log(url)
-  console.log(path)
-  console.log(TMDB_ORIGIN)
 
   try {
     const response = await fetch(url, { headers: { referer } });
