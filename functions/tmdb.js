@@ -18,7 +18,7 @@ exports.handler = async (event) => {
   const url = new URL(path, TMDB_ORIGIN);
   const parameters = querystring.stringify({
     ...queryStringParameters,
-    key: process.env.API_KEY,
+    api_key: process.env.API_KEY,
   });
 
   url.search = parameters;
