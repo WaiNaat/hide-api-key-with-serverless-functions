@@ -14,7 +14,7 @@ status = 200
 force = true
 
 [[redirects]]
-from = "/3/*"
+from = "/3/movie/popular/*"
 to = "/.netlify/functions/tmdb/:splat"
 status = 200
 force = true
