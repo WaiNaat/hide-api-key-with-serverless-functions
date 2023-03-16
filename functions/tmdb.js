@@ -2,7 +2,7 @@ const fetch = require("node-fetch");
 const querystring = require("querystring");
 const stringify = require("../utils/stringify.js");
 
-const TMDB_ORIGIN = "https://api.themoviedb.org";
+const TMDB_ORIGIN = "https://api.themoviedb.org/3/";
 const headers = {
   "Access-Control-Allow-Origin": process.env.HOST,
   "Content-Type": "application/json; charset=utf-8",
